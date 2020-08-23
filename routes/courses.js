@@ -14,7 +14,7 @@ const router = express.Router({
 });
 
 router.route('/').get(getCourses).post(addCourse);
-router.route('/:id').get(getCourse);
+router.route('/:id').get(getCourse).put(updateCourse).delete(deleteCourse);
 
 
 // const advancedResults = require('../middleware/advancedResults');
